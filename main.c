@@ -8,6 +8,6 @@ void displayName(char name[])
 int main()
 {
     printf("Vscode is awesome!!!");
-    displayName("Ritchiel Reza")
+    displayName("Ritchiel Reza");
     return 0;
 }
