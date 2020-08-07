@@ -8,6 +8,6 @@ void greetings(char name[])
 int main()
 {
     printf("Vscode is awesome!!!");
-    greetings("Ritchiel Reza");
+    greetings("Git");
     return 0;
 }
