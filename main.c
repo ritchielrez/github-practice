@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void displayName(char name[])
+void greetings(char name[])
 {
     printf("Welcome, %s!!!", name);
 }
@@ -8,6 +8,6 @@ void displayName(char name[])
 int main()
 {
     printf("Vscode is awesome!!!");
-    displayName("Ritchiel Reza");
+    greetings("Ritchiel Reza");
     return 0;
 }
