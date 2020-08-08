@@ -23,7 +23,6 @@ ConsoleApplication1.vcxproj.filters
 ConsoleApplication1.cpp
     This is the main application source file.
 
-/////////////////////////////////////////////////////////////////////////////
 Other standard files:
 
 StdAfx.h, StdAfx.cpp
