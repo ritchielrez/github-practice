@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-int _tmain(int argc, _TCHAR* argv[])
+int _tmain(int argc, char argv[])
 {
 	printf("Hello World!\n");
 	system("pause");
