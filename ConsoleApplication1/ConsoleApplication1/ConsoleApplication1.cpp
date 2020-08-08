@@ -2,10 +2,13 @@
 //
 
 #include "stdafx.h"
+#include <stdlib.h>
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	printf("Hello World!\n");
+	system("pause");
 	return 0;
 }
 
