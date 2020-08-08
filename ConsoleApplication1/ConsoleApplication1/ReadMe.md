@@ -1,5 +1,6 @@
-
-**CONSOLE APPLICATION : ConsoleApplication1 Project Overview**
+========================================================================
+    CONSOLE APPLICATION : ConsoleApplication1 Project Overview
+========================================================================
 
 AppWizard has created this ConsoleApplication1 application for you.
 
