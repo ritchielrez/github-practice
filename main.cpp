@@ -21,10 +21,9 @@ int main(int argc, char const *argv[])
 {
     Calculator calculator;
 
-    // printf("Enter your expression: \n");
+    printf("Enter your expression: \n");
+    scanf("%s %c %s", num1Ch, &op, num2Ch);
     // std:getline(std::cin, expression);
-
-
 
     return 0;
 }
