@@ -16,5 +16,9 @@ typedef struct
 int main(int argc, char const *argv[])
 {
     Calculator calculator;
+
+    printf("Enter your expression: \n");
+    std:getline(std::cin, expression);
+
     return 0;
 }
