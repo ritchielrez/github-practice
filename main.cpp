@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-
+typedef struct 
+{
+    
+} Calculator;
 
 int main(int argc, char const *argv[])
 {
