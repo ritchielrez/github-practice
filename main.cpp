@@ -3,7 +3,7 @@
 #include <string.h>
 #include <iostream>
 
-std::string expression;
+//std::string expression;
 char op;
 char firstnumCh[5], secondnumCh[5];
 double firstnumI, secondnumI;
@@ -17,8 +17,8 @@ int main(int argc, char const *argv[])
 {
     Calculator calculator;
 
-    printf("Enter your expression: \n");
-    std:getline(std::cin, expression);
+    // printf("Enter your expression: \n");
+    // std:getline(std::cin, expression);
 
     return 0;
 }
