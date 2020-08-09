@@ -30,6 +30,24 @@ int main(int argc, char const *argv[])
     num1I = atof(num1Ch);
     num2I = atof(num2Ch);
 
+    switch(op)
+    {
+        case '+':
+            calculator.add(num1I, num2I);
+            break;
+        case '-':
+            calculator.sub(num1I, num2I);
+            break;
+        case '*':
+            calculator.mul(num1I, num2I);
+            break;
+        case '/':
+            calculator.div(num1I, num2I);
+            break;
+        default:
+            printf("Invalid operator.");
+    }
+
     return 0;
 }
 
