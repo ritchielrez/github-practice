@@ -10,7 +10,11 @@ double firstnumI, secondnumI;
 
 typedef struct 
 {
-    
+    inline double add(double, double);
+    inline double sub(double, double);
+    inline double mul(double, double);
+    inline double div(double, double);
+
 } Calculator;
 
 int main(int argc, char const *argv[])
@@ -19,6 +23,8 @@ int main(int argc, char const *argv[])
 
     // printf("Enter your expression: \n");
     // std:getline(std::cin, expression);
+
+
 
     return 0;
 }
