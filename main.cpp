@@ -25,6 +25,11 @@ int main(int argc, char const *argv[])
     scanf("%s %c %s", num1Ch, &op, num2Ch);
     // std:getline(std::cin, expression);
 
+    // printf("%s %c %s", num1Ch, op, num2Ch);
+
+    num1I = atof(num1Ch);
+    num2I = atof(num2Ch);
+
     return 0;
 }
 
