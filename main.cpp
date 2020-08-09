@@ -4,7 +4,7 @@
 
 char op;
 char firstnumCh[5], secondnumCh[5];
-int firstnumI, secondnumI;
+double firstnumI, secondnumI;
 
 typedef struct 
 {
