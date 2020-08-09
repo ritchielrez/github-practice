@@ -5,8 +5,8 @@
 
 //std::string expression;
 char op;
-char firstnumCh[5], secondnumCh[5];
-double firstnumI, secondnumI;
+char num1Ch[5], num2Ch[5];
+double num1I, num2I;
 
 typedef struct 
 {
@@ -27,4 +27,24 @@ int main(int argc, char const *argv[])
 
 
     return 0;
+}
+
+inline double Calculator::add(double num1, double num2)
+{
+    return num1 + num2;
+}
+
+inline double Calculator::sub(double num1, double num2)
+{
+    return num1 - num2;
+}
+
+inline double Calculator::mul(double num1, double num2)
+{
+    return num1 * num2;
+}
+
+inline double Calculator::div(double num1, double num2)
+{
+     return num1 / num2;
 }
