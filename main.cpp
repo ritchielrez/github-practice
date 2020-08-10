@@ -7,12 +7,13 @@
 char op;
 char num1Ch[5], num2Ch[5];
 double num1I, num2I;
+int result;
 
 // Function prototypes
 void input(void);
 void calculate(void);
 
-typedef struct 
+typedef struct
 {
     inline double add(double, double);
     inline double sub(double, double);
@@ -37,22 +38,26 @@ int main(int argc, char const *argv[])
 
 inline double Calculator::add(double num1, double num2)
 {
-    return num1 + num2;
+    result = num1 + num2;
+    printf("%.2f + %.2f = %.2f\n", num1, num2, num1 + num2);
 }
 
 inline double Calculator::sub(double num1, double num2)
 {
-    return num1 - num2;
+    result = num1 - num2;
+    printf("%.2f - %.2f = %.2f\n", num1, num2, num1 - num2);
 }
 
 inline double Calculator::mul(double num1, double num2)
 {
-    return num1 * num2;
+    result = num1 * num2;
+    printf("%.2f * %.2f = %.2f\n", num1, num2, num1 * num2);
 }
 
 inline double Calculator::div(double num1, double num2)
 {
-     return num1 / num2;
+    result = num1 / num2;
+    printf("%.2f / %.2f = %.2f\n", num1, num2, num1 / num2);
 }
 
 void input(void)
