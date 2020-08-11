@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
 
         system("pause>nul");
 
-        if(GetKeyState(VK_ESCAPE))
+        if(GetAsyncKeyState(VK_ESCAPE))
         {
             break;
         }
