@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <windows.h>
 #include "easy.h"
+
+
 
 //std::string expression;
 char op;
@@ -10,9 +8,16 @@ char num1Ch[5], num2Ch[5];
 double num1I, num2I;
 int result;
 
+
+
 // Function prototypes
-void input(bool);
-int calculate(void);
+
+// Input function
+void input(void);
+// Calculate function
+void calculate(void);
+
+
 
 typedef struct
 {
@@ -26,29 +31,30 @@ typedef struct
 // Structure variable
 Calculator calculator;
 
+
+
 int main(int argc, char const *argv[])
 {
     // std:getline(std::cin, expression);
 
     // printf("%s %c %s", num1Ch, op, num2Ch);
-    int i = 1;
-
-    do 
+    while(1)
     {
-        if(i == 1)
-        {
-            input(true);
-        }
-        else 
-        {
-            input(false);
-        }
+        input();
+        calculate();
 
-        i++;
-    } while(calculate());
+        system("pause>nul");
+
+        if(GetKeyState(VK_ESCAPE))
+        {
+            break;
+        }
+        
+    } 
 
     return 0;
 }
+
 
 inline void Calculator::add(double num1, double num2)
 {
@@ -74,50 +80,35 @@ inline void Calculator::div(double num1, double num2)
     printf("%.2f / %.2f = %.2f\n", num1, num2, num1 / num2);
 }
 
-void input(bool FirstTimeOperation)
-{
-    if(FirstTimeOperation)
-    {
-        printf("Enter your expression: \n");
-        scanf("%s %c %s", num1Ch, &op, num2Ch);
-    }
-    else
-    {
-        printf("Enter your expression: \n");
-        scanf("%c %s", &op, num2Ch);   
-    }
-}
 
-int calculate(void)
+void input(void)
 {
+    printf("Enter your expression: \n");
+    scanf("%s %c %s", num1Ch, &op, num2Ch);
+
+
     num1I = atof(num1Ch);
     num2I = atof(num2Ch);
+}
 
-    if(GetAsyncKeyState(VK_ESCAPE))
-    {
-        return 0;
-    }
 
+void calculate(void)
+{
     switch(op)
         {
             case '+':
-                calculator.add(num1I, num2I);
-                num1I = result;
+                    calculator.add(num1I, num2I);
                 break;
             case '-':
                 calculator.sub(num1I, num2I);
-                num1I = result;
                 break;
             case '*':
                 calculator.mul(num1I, num2I);
-                num1I = result;
                 break;
             case '/':
                 calculator.div(num1I, num2I);
-                num1I = result;
                 break;
             default:
-                printf("Invalid operation. Try out again by keeping spaces between the numbers and the operator or type only 2 numbers and 1 operator.\n");
-                calculate();
-        }
+                printf("Invalid operation. Try out again by keeping spaces between the numbers and the operator or type only 2 numbers and 1 operator.\n\n");
     }
+}
