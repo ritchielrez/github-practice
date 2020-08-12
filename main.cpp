@@ -40,16 +40,16 @@ int main(int argc, char const *argv[])
     // printf("%s %c %s", num1Ch, op, num2Ch);
     while(1)
     {
-        input();
-        calculate();
-
         system("pause>nul");
 
         if(GetAsyncKeyState(VK_ESCAPE))
         {
             break;
         }
+
         
+        input();
+        calculate();
     } 
 
     return 0;
