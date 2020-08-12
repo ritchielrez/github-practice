@@ -47,13 +47,13 @@ int main(int argc, char const *argv[])
             break;
         }
 
-        
         input();
         calculate();
     } 
 
     return 0;
 }
+
 
 
 inline void Calculator::add(double num1, double num2)
@@ -81,6 +81,7 @@ inline void Calculator::div(double num1, double num2)
 }
 
 
+
 void input(void)
 {
     printf("Enter your expression: \n");
@@ -90,6 +91,7 @@ void input(void)
     num1I = atof(num1Ch);
     num2I = atof(num2Ch);
 }
+
 
 
 void calculate(void)
