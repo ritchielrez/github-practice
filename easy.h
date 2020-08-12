@@ -1,4 +1,6 @@
 #include <iostream>
+#include "CONIO.H"
+#include "_DEFS.H"
 #include <typeinfo>
 #include <stdio.h>
 #include <stdlib.h>
